@@ -16,7 +16,7 @@ class AnalogClock {
         */
        degreePerHour = 360 / 12;
        degreePerMinute = 360 / 60;
-       mintueDegree = ((hourDegree % degreePerHour) * 6) * 2;
+       mintueDegree = ((hourDegree % degreePerHour) * degreePerMinute) * 2;
        System.out.print(mintueDegree);
        // closing the scanner object
        scanner.close();
